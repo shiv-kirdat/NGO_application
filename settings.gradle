@@ -1,2 +1,3 @@
 rootProject.name='NGO_application'
-include ':app'
+include ':donor_side'
+include ':admin_side'
