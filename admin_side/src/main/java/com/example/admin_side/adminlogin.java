@@ -10,21 +10,21 @@ import android.widget.EditText;
 import android.widget.Toast;
 
 public class adminlogin extends AppCompatActivity {
-EditText emailid, password;
-Button login;
-DatabaseHelper databaseHelper;
+//EditText emailid, password;
+//Button login;
+//DatabaseHelper databaseHelper;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_adminlogin);
+//        setContentView(R.layout.activity_adminlogin);
 
-        emailid=findViewById(R.id.emailid);
-        password=findViewById(R.id.password);
-        login=findViewById(R.id.login_button);
+      //  emailid=findViewById(R.id.emailid);
+        //password=findViewById(R.id.password);
+        //login=findViewById(R.id.login_button);
 
-        databaseHelper = new DatabaseHelper(adminlogin.this);
+        //databaseHelper = new DatabaseHelper(adminlogin.this);
 
-
+/*
     login.setOnClickListener(new View.OnClickListener(){
     public void onClick(View view){
             boolean isExist = databaseHelper.checkUserExist(emailid.getText().toString(),password.getText().toString());
@@ -48,6 +48,6 @@ DatabaseHelper databaseHelper;
                 Toast.makeText(adminlogin.this, "Invalid Credentials", Toast.LENGTH_LONG).show();
             }*/
 
-    });
+ //   });
 }
 }

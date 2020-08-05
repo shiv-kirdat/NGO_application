@@ -10,19 +10,30 @@ import android.view.View.OnClickListener;
 
 public class adminActivity extends AppCompatActivity {
 
+    DatabaseHelper db;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_admin);
-        Button create_event=findViewById(R.id.create_event);
+
+        db = new DatabaseHelper(this);
+
+        Button create_event = findViewById(R.id.create_event);
+
         create_event.setOnClickListener(new OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent i= new Intent("Create_event");
-                startActivity(i);
+
+                openNew();
+
             }
         });
-    }
 
+    }
+    public void openNew(){
+        Intent i = new Intent(this,Create_event.class);
+        startActivity(i);
+    }
 
 }
