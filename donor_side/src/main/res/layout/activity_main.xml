@@ -6,69 +6,60 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <TextView
-        android:id="@+id/textView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintHorizontal_bias="0.428"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.122" />
-
-    <Button
-        android:id="@+id/button2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="save"
+    <LinearLayout
+        android:layout_width="336dp"
+        android:layout_height="715dp"
+        android:orientation="vertical"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
 
-    </Button>
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="353dp"
+            android:layout_height="190dp"
+            android:layout_marginTop="75dp"
+            app:srcCompat="@drawable/ngo1" />
 
-    <Button
-        android:id="@+id/button"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="New_Button"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.47"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.811" />
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="Our Vision"
+            android:textColor="	#FF0000"
+            android:textStyle="bold"
+            android:textSize="18dp"
+            />
 
-    <EditText
-        android:id="@+id/editTextTextPersonName"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="78dp"
-        android:layout_marginTop="78dp"
-        android:layout_marginEnd="123dp"
-        android:layout_marginBottom="41dp"
-        android:ems="10"
-        android:inputType="textPersonName"
-        android:text="Hiii Girls"
-        app:layout_constraintBottom_toTopOf="@+id/button"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button2" />
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:textSize="14dp"
+            android:text="To create tangible and measurable impact on the livelihood of underprivileged sections by intervention in medical, educational, skill development and agricultural sectors.
+" />
 
-    <TextView
-        android:id="@+id/textView2"
-        android:layout_width="295dp"
-        android:layout_height="45dp"
-        android:text="Checking by Sayali Patil"
-        android:textSize="24sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.406"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.375" />
+        <TextView
+            android:id="@+id/textView7"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="Our Mission"
+            android:textColor="	#FF0000"
+            android:textStyle="bold"
+            android:textSize="18dp" />
 
+        <TextView
+            android:id="@+id/textView8"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:textSize="14dp"
+            android:text="To provide direct services which will enable people to live a full and dignified life. Medical support through Medical Camps in Purba Midnapore and treatment of criticall ill patients in Kolkata (better hospitals and Medical Facilities)." />
+
+
+    </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
